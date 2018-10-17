@@ -1,0 +1,3 @@
+0 */3 * * * /home/admin/janesi-spider/Daily_crawler/start_crawl.sh;
+*/20 * * * * /home/admin/janesi-spider/Daily_crawler/start_hot_crawl.sh
+

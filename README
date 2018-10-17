@@ -1,0 +1,11 @@
+
+
+## 运行步骤：
+
+（一）频率正常
+
+MyUtils.py --- > settings.py  --- > news_crawl  --> push_urls ----> 相对应的RedisSpider ---> 相对应的redis_key
+
+（二）频率快
+
+MyUtils.py --->  settings.py  ---> news_hot_crawl --> push_hot_urls ---> 相对应的RedisSpider ---> 相对应的redis_key
