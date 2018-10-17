@@ -35,7 +35,7 @@ class ProxyMiddleware(object):
 
     def process_request(self, request, spider):
         try:
-            PROXY_POOL_URL = 'http://api.ip.data5u.com/dynamic/get.html?order=ceb48be0f517bf1ade7aaaae008d890f&sep=3'
+            PROXY_POOL_URL = 'http://api.ip./dynamic/get.html?order=ceb48be0f517bf1ade7aaaae008d890f&sep=3'
             response = requests.get(url=PROXY_POOL_URL)
             if response.status_code == 200:
                 proxy = response.text.strip()
