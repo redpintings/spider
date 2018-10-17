@@ -82,7 +82,6 @@ class serviceConfig():
 
         }
         mysql_list = {
-            # 'MYSQL_HOST':'sh-cdb-1ridb5ju.sql.tencentcdb.com',
 
         }
         redis_list = {

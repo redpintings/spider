@@ -8,12 +8,9 @@ import settings
 
 REDIS_DB_NUM = 0
 # 生产环境
-# pool = redis.ConnectionPool(host='r-uf602bb89862b934.redis.rds.aliyuncs.com', port=6379,db=0,password='AL4pCIZDGIIn')
 pool = redis.ConnectionPool(host=settings.REDIS_HOST, port=settings.REDIS_PORT,db=REDIS_DB_NUM,password=settings.REDIS_PWD)
 # 开发环境
-# pool = redis.ConnectionPool(host='118.25.0.190', port=6379, db=0, password='MyLBdwW13I83sygn')
 # 测试环境
-# pool = redis.ConnectionPool(host='118.25.0.170', port=6379, db=0, password='MyLBdwW13I83sygn')
 r = redis.StrictRedis(connection_pool=pool)
 
 
